@@ -3,9 +3,9 @@
 - Khi bị lỗi này VM ping từ trong ra ngoài và từ ngoài PING vào trong tốt.
 - Nhưng VM bị stuck hoặc không thể nào SSH vào được.
 - Nguyên nhân là do VM có MTU khi đi ra ngoài bị thừa 8 byte do GRE đóng gói vào.
+
 - Việc này được thực hiện trên network node.
-
-
+Thứ tự như sau: 
 - Sửa file này :
 ```
 /etc/neutron/dhcp_agent.ini
